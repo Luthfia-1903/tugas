@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Gambar</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="350" height="100" style="border:4px solid rgb(218, 210, 210);"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        
+        // Membuat persegi panjang dengan gradasi merah
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+
+        // Membuat lingkaran dengan garis hitam
+        ctx.beginPath();
+        ctx.arc(230, 50, 35, 0, 2 * Math.PI);
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+
+        
+        // Membuat garis vertikal
+        ctx.beginPath();
+        ctx.moveTo(300, 1);
+        ctx.lineTo(300, 100);
+        ctx.stroke();
+    </script>
+</body>
+</html>
