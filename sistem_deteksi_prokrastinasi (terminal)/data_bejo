@@ -1,0 +1,56 @@
+{
+  "mahasiswa": {
+    "nama": "Bejo",
+    "nim": "2312345678"
+  },
+  "aktivitas": [
+    {
+      "id_aktivitas": 1,
+      "jenis": "lainnya",
+      "deskripsi": "main game",
+      "durasi": 7.0,
+      "tanggal": "2026-01-06",
+      "waktu_mulai": "05:00",
+      "deadline_terkait": null,
+      "tingkat_kesulitan": 1,
+      "produktivitas": 10
+    }
+  ],
+  "tugas": [
+    {
+      "id_tugas": 1,
+      "mata_kuliah": "matematika",
+      "deskripsi": "hitung perkalian",
+      "deadline": "2026-01-06",
+      "tanggal_diberikan": "2026-01-06",
+      "status": "belum",
+      "tanggal_selesai": null,
+      "tingkat_kesulitan": 5,
+      "estimasi_waktu": 3.0,
+      "waktu_aktual": null
+    }
+  ],
+  "metrik_prokrastinasi": {
+    "skor_total": 0.0,
+    "skor_mentah": 0,
+    "maksimum_skor": 11,
+    "tingkat": "RENDAH",
+    "faktor_penilaian": {
+      "keterlambatan": {
+        "skor": 0,
+        "persentase_terlambat": 0.0,
+        "jumlah_tugas_terlambat": 0,
+        "total_tugas": 1
+      },
+      "rasio_hiburan": {
+        "skor": 0,
+        "persentase_hiburan": 0.0,
+        "persentase_produktif": 0.0,
+        "waktu_hiburan": 0.0,
+        "waktu_produktif": 0.0
+      }
+    },
+    "rekomendasi": "🎉 SANGAT BAIK! Tingkat prokrastinasi rendah. Pertahankan kebiasaan produktif dan disiplin yang sudah ada."
+  },
+  "tanggal_update": "2026-01-06 09:44:45"
+}

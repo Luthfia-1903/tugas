@@ -1,0 +1,53 @@
+
+============================================================
+LAPORAN ANALISIS PROKRASTINASI MAHASISWA
+============================================================
+
+MAHASISWA:
+Nama    : Bejo
+NIM     : 2312345678
+Tanggal : 06/01/2026 09:43
+
+============================================================
+HASIL ANALISIS:
+============================================================
+
+Indeks Prokrastinasi: 0.0/10
+Tingkat Prokrastinasi: RENDAH
+
+FAKTOR PENILAIAN:
+
+KETERLAMBATAN:
+  skor: 0
+  persentase_terlambat: 0.0
+  jumlah_tugas_terlambat: 0
+  total_tugas: 1
+
+RASIO_HIBURAN:
+  skor: 0
+  persentase_hiburan: 0.0
+  persentase_produktif: 0.0
+  waktu_hiburan: 0.0
+  waktu_produktif: 0.0
+
+============================================================
+REKOMENDASI:
+============================================================
+
+🎉 SANGAT BAIK! Tingkat prokrastinasi rendah. Pertahankan kebiasaan produktif dan disiplin yang sudah ada.
+
+STATISTIK AKTIVITAS:
+Total Aktivitas Tercatat: 1
+Total Tugas: 1
+
+DISTRIBUSI WAKTU:
+  lainnya: 100.0%
+
+============================================================
+SARAN TINDAK LANJUT:
+1. Gunakan teknik Pomodoro (25 menit fokus, 5 menit istirahat)
+2. Buat to-do list harian dengan prioritas yang jelas
+3. Tetapkan deadline internal 2-3 hari sebelum deadline sebenarnya
+4. Kurangi distraksi (matikan notifikasi, gunakan website blocker)
+5. Lacak progres harian untuk meningkatkan akuntabilitas
+============================================================
