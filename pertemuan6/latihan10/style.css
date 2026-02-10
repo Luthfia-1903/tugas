@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1089e4;
+}
+
+.container {
+    background-color:  #6aeaf4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eaf4f4;
+    padding-bottom: 15px;
+}
+
+.header h1 {
+    color: #2a5885;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #2a5885;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 88, 133, 0.2);
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-option {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    padding: 10px 0;
+    width: 100%;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+button {
+    background-color: #4d9eef;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #54a2f5;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    select,
+    button {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembayaran Pendaftaran Calon Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Form Pembayaran Pendaftaran</h1>
+            <p>Calon Mahasiswa Baru Tahun Akademik 2025/2026</p>
+        </div>
+        
+        <form id="formPembayaran">
+            <div class="form-group">
+                <label for="nik" class="required">NIK (Nomor Induk Kependudukan)</label>
+                <input type="text" id="nik" name="nik" pattern="[0-9]{16}" maxlength="16" placeholder="Masukkan 16 digit NIK" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nama" class="required">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap sesuai KTP" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tujuan" class="required">Tujuan Pembayaran</label>
+                <select id="tujuan" name="tujuan" required>
+                    <option value="" disabled selected>Pilih tujuan pembayaran</option>
+                    <option value="pendaftaran">Pendaftaran Mahasiswa Baru</option>
+                    <option value="registrasi">Registrasi Ulang</option>
+                    <option value="spp">Pembayaran SPP</option>
+                    <option value="ujian">Biaya Ujian</option>
+                    <option value="bop">BOP</option>
+                    <option value="bpp">BPP</option>
+                    <option value="wisuda">Biaya Wisuda</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="jumlah" class="required">Jumlah Pembayaran (Rp)</label>
+                <input type="number" id="jumlah" name="jumlah" min="0" placeholder="Masukkan jumlah pembayaran" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="required">Metode Pembayaran</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="bsi" name="metode_pembayaran" value="bsi" required>
+                        <label for="bsi">Bank Syariah Indonesia (BSI)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="bmi" name="metode_pembayaran" value="bmi">
+                        <label for="bmi">Bank Muamalat Indonesia (BMI)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="bms" name="metode_pembayaran" value="bms">
+                        <label for="bms">Bank Mega Syariah (BMS)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="bukti" class="required">Bukti Pembayaran</label>
+                <input type="file" id="bukti" name="bukti" accept="image/*,.pdf" required>
+                <small>Format file: JPG, PNG, atau PDF (Maks. 5MB)</small>
+            </div>
+            
+            <button type="submit">SIMPAN</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
