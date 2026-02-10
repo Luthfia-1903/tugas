@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertemuan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header {
+            color: #001f3f; /* Navy color for header */
+            margin-bottom: 20px;
+        }
+        
+        .subheader {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .button {
+            padding: 12px 25px;
+            background-color: #001f3f; /* Navy color for buttons */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #00346b; /* Slightly lighter navy for hover */
+        }
+        
+        /* Navigation styling */
+        .navbar {
+            background-color: #001f3f; /* Navy color for navbar */
+            padding: 15px 0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .nav-item {
+            position: relative;
+            margin: 0 10px;
+        }
+        
+        .nav-button {
+            background-color: #001f3f; /* Navy color for nav buttons */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background-color: #00346b; /* Slightly lighter navy for hover */
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+            left: 0;
+        }
+        
+        .dropdown-content a {
+            color: #001f3f; /* Navy color for dropdown text */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #e6edf5; /* Light navy tint for hover */
+        }
+        
+        .nav-item:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Nested dropdown */
+        .nested-dropdown {
+            position: relative;
+        }
+        
+        .nested-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 100%;
+            top: 0;
+            border-radius: 5px;
+        }
+        
+        .nested-dropdown:hover .nested-dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="nav-container">
+                <div class="nav-item">
+                    <button class="nav-button">Home</button>
+                </div>
+                <div class="nav-item">
+                    <button class="nav-button">Pertemuan</button>
+                    <div class="dropdown-content">
+                        <a href="#">Pertemuan 1</a>
+                    <div class="nested-dropdown">
+                        <a href="#">Pertemuan 2 &#9656;</a>
+                        <div class="nested-dropdown-content">
+                            <a href="http://2303015035.kesug.com/2303015035LuthfiaWidyaningrum4B/Pertemuan2/index.html">Tugas 1</a>
+                        </div>
+                    </div>
+                    <div class="nested-dropdown">
+                        <a href="#">Pertemuan 3 &#9656;</a>
+                        <div class="nested-dropdown-content">
+                            <a href="http://2303015035.kesug.com/pertemuan3/index.html">Latihan 1</a>
+                        </div>
+                    </div>
+
+                        <div class="nested-dropdown">
+                            <a href="#">Pertemuan 4 &#9656;</a>
+                            <div class="nested-dropdown-content">
+                                <a href="http://2303015035.kesug.com/pertemuan4/latihan1/index.html">Latihan 1</a>
+                                <a href="http://2303015035.kesug.com/pertemuan4/latihan2/index.html">Latihan 2</a>
+                                <a href="http://2303015035.kesug.com/pertemuan4/latihan3/index.html">Latihan 3</a>
+                                <a href="http://2303015035.kesug.com/pertemuan4/latihan4/index.html">Latihan 4</a>
+                                <a href="http://2303015035.kesug.com/pertemuan4/latihan5/index.html">Latihan 5</a>
+                                <a href="http://2303015035.kesug.com/pertemuan4/latihan6/index.html">Latihan 6</a>
+                            </div>
+                        </div>
+                        <a href="#">Pertemuan 5</a>
+                        <div class="nested-dropdown">
+                            <a href="#">Pertemuan 6 &#9656;</a>
+                            <div class="nested-dropdown-content">
+                                <a href="#">Tugas 1</a>
+                                <a href="#">Latihan 1</a>
+                                <a href="#">Latihan 2</a>
+                                <a href="#">Latihan 3</a>
+                                <a href="#">Latihan 4</a>
+                                <a href="#">Latihan 5</a>
+                            </div>
+                        </div>
+                        <a href="#">Pertemuan 7</a>
+                        <a href="#">UTS</a>
+                        <a href="#">Pertemuan 9</a>
+                        <a href="#">Pertemuan 10</a>
+                        <a href="#">Pertemuan 11</a>
+                        <a href="#">Pertemuan 12</a>
+                        <a href="#">Pertemuan 13</a>
+                        <a href="#">Pertemuan 14</a>
+                        <a href="#">Pertemuan 15</a>
+                        <a href="#">UAS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Content similar to the image -->
+        <h1 class="header">Selamat Datang di Website Pertemuan</h1>
+        <p class="subheader">Silakan pilih pertemuan yang ingin Anda lihat.</p>
+        
+        <div class="button-container">
+            
+        </div>
+    </div>
+</body>
+</html>

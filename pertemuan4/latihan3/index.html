@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            border: 1px solid #5524f6;
+            padding: 20px;
+            box-shadow: 0 0 10px #31a2f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        .gender {
+            margin-top: 5px;
+        }
+        .gender input {
+            margin-right: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 60px;
+        }
+        input[type="submit"] {
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #44d1f8;
+            border: 1px solid #ebe5e5;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0ef0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrasi</h2>
+        <form action="#" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label>Jenis kelamin:</label>
+            <div class="gender">
+                <input type="radio" id="laki" name="gender" value="Laki-laki">
+                <label for="laki" style="display:inline;">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan" style="display:inline;">Perempuan</label>
+            </div>
+
+            <label for="agama">Agama:</label>
+            <select id="agama" name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+            </select>
+
+            <label for="biografi">Biografi:</label>
+            <textarea id="biografi" name="biografi"></textarea>
+
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
